@@ -7,12 +7,12 @@ public class TimesheetApp {
         System.out.println("Welcome to KPMG Timesheet Program!");
         System.out.println("==================================");
         
-        int[] arrayOfNumbers = new int[999999999];
-        arrayOfNumbers[0] = 5;
-        arrayOfNumbers[1] = 6;
+        String[] dataRow = new String[4];
         
-        System.in.read();
-
+        dataRow[1] = "Development";
+        dataRow[2] = "8";
+        dataRow[3] = "hours";
+        dataRow[4] = "CEZ";
 
         //System.out.println("Input argument number 1: " + inputArguments[0]);
         //System.out.println("Input argument number 2: " + inputArguments[1]);
