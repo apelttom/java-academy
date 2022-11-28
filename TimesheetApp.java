@@ -10,6 +10,8 @@ public class TimesheetApp {
         int[] arrayOfNumbers = new int[999999999];
         arrayOfNumbers[0] = 5;
         arrayOfNumbers[1] = 6;
+        
+        System.in.read();
 
 
         //System.out.println("Input argument number 1: " + inputArguments[0]);
