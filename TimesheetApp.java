@@ -13,6 +13,8 @@ public class TimesheetApp {
         dataRow[1] = "8";
         dataRow[2] = "hours";
         dataRow[3] = "CEZ";
+        
+        System.in.read();
 
         //System.out.println("Input argument number 1: " + inputArguments[0]);
         //System.out.println("Input argument number 2: " + inputArguments[1]);
