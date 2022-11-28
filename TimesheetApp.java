@@ -25,10 +25,9 @@ public class TimesheetApp {
         //System.out.println("We will now log 8 hours of work today on CEZ project into file: " + fileName);
         try{
                 FileWriter writer = new FileWriter(fileName, true);
-                writer.append(dataRow[0]);
-                writer.append(dataRow[1]);
-                writer.append(dataRow[2]);
-                writer.append(dataRow[3]);
+                for(int index = 0; index < 4; index = index + 1){
+                    writer.append(dataRow[index]);
+                }
                 writer.close();
         } catch (Exception e) {
                 e.printStackTrace();
