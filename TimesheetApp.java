@@ -9,10 +9,10 @@ public class TimesheetApp {
         
         String[] dataRow = new String[4];
         
-        dataRow[1] = "Development";
-        dataRow[2] = "8";
-        dataRow[3] = "hours";
-        dataRow[4] = "CEZ";
+        dataRow[0] = "Development";
+        dataRow[1] = "8";
+        dataRow[2] = "hours";
+        dataRow[3] = "CEZ";
 
         //System.out.println("Input argument number 1: " + inputArguments[0]);
         //System.out.println("Input argument number 2: " + inputArguments[1]);
