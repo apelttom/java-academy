@@ -1,7 +1,7 @@
 import java.io.FileWriter;
 
 public class TimesheetApp {
-    public static void main(String inputArguments[]) {
+    public static void main(String inputArguments[]) throws Exception {
         String fileName = "timesheet.csv";
         System.out.println("==================================");
         System.out.println("Welcome to KPMG Timesheet Program!");
