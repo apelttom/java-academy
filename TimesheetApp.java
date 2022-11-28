@@ -27,6 +27,8 @@ public class TimesheetApp {
                 FileWriter writer = new FileWriter(fileName, true);
                 for(int index = 0; index < 4; index = index + 1){
                     writer.append(dataRow[index]);
+                    writer.append(" ");
+                    writer.append(",");
                 }
                 writer.close();
         } catch (Exception e) {
