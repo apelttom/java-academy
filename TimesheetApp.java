@@ -7,14 +7,22 @@ public class TimesheetApp {
         System.out.println("Welcome to KPMG Timesheet Program!");
         System.out.println("==================================");
         
+        String[] dataHeader = new String[4];
+
+        dataHeader[0] = "Activity ,";
+        dataHeader[1] = "workedTime ,";
+        dataHeader[2] = "units ,";
+        dataHeader[3] = "project\n";
+
         String[] dataRow = new String[4];
         
-        dataRow[0] = "Development";
-        dataRow[1] = "8";
-        dataRow[2] = "hours";
-        dataRow[3] = "CEZ";
+        dataRow[0] = "Development ,";
+        dataRow[1] = "8 ,";
+        dataRow[2] = "hours ,";
+        dataRow[3] = "CEZ\n";
         
-        System.in.read();
+        
+        
 
         //System.out.println("Input argument number 1: " + inputArguments[0]);
         //System.out.println("Input argument number 2: " + inputArguments[1]);
@@ -26,13 +34,22 @@ public class TimesheetApp {
         try{
                 FileWriter writer = new FileWriter(fileName, true);
                 for(int index = 0; index < 4; index = index + 1){
+                    writer.append(dataHeader[index]);
+                    //writer.append(" ");
+                    //writer.append(",");
+                }
+
+                for(int index = 0; index < 4; index = index + 1){
                     writer.append(dataRow[index]);
-                    writer.append(" ");
-                    writer.append(",");
+                    //writer.append(" ");
+                    //writer.append(",");
                 }
                 writer.close();
         } catch (Exception e) {
                 e.printStackTrace();
         }
+
+        System.out.println("Program finished. Press any key...");
+        System.in.read();
     }
 }
