@@ -9,11 +9,12 @@ public class TimesheetApp {
         System.out.println("==================================");
 
         TimesheetRecordModel recordModel = new TimesheetRecordModel();
-        recordModel.addHeader("Activity", "workedTime", "units", "project");
+        var headers = recordModel.addHeader("Activity");
+        //recordModel.addHeader("Activity", "workedTime", "units", "project");
         // recordModel.addData("Development", 8, "hours", "CEZ");
 
         FileWriter writer = new FileWriter(fileName, true);
-        writer.append(recordModel.toCharacters());
+        writer.append(recordModel.toString());
         writer.close();
 
         //--------------OLD CODE-------------------------------
