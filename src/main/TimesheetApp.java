@@ -1,3 +1,5 @@
+package src.main;
+
 import java.io.FileWriter;
 
 public class TimesheetApp {
@@ -9,7 +11,7 @@ public class TimesheetApp {
         System.out.println("==================================");
 
         TimesheetRecordModel recordModel = new TimesheetRecordModel();
-        var headers = recordModel.addHeader("Activity");
+        recordModel.addHeader("Activity");
         //recordModel.addHeader("Activity", "workedTime", "units", "project");
         // recordModel.addData("Development", 8, "hours", "CEZ");
 
