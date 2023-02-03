@@ -1,9 +1,8 @@
-package src.main;
+package cz.kpmg.timesheetapp.models;
 
-import java.util.ArrayList; // import the ArrayList class
+import java.util.ArrayList;
 
 public class TimesheetRecordModel {
-
     private ArrayList<String> headers = new ArrayList<>();
     private ArrayList<String> body = new ArrayList<>();
 
